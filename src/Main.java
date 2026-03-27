@@ -12,11 +12,15 @@ public class Main {
 		System.out.print("please input n:");
 		n=sc.nextInt();
 		for (int i=1;i<=n;i++){
-			sum = sum+"*"; 
-		}
-		for(int i=1;i<=n;i++){
+			sum="";
+			for (int j=1; j<=i; j++){
+				sum+="*";
+			}
 			System.out.println(sum);
+				
+				
 		}
+		
 	
 	}
 
