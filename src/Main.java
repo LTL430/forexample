@@ -12,16 +12,20 @@ public class Main {
 		System.out.print("please input n:");
 		n=sc.nextInt();
 		for (int i=1;i<=n;i++){
-			sum=makeLine(i);
+			sum=makeLine(i,n);
 			System.out.println(sum);
 		}
 		
 	
 	}
 
-	private static String makeLine(int m) {
+	private static String makeLine(int m, int n) {
 		// TODO Auto-generated method stub
 		String line="";
+		for (int i=0; i<n-m; i++) {
+			line+=" ";
+		
+		}
 		for (int i=0; i<m; i++) {
 			line+="*";
 		}
